@@ -8,5 +8,5 @@ if [ ! -d ${SNAP_CACHE_DIR}/packer ]; then
     echo Packer installation complete
 fi
 
-${SNAP_CACHE_DIR}/packer/packer build image_management/digital_ocean_packer_script.json
+${SNAP_CACHE_DIR}/packer/packer-packer build image_management/digital_ocean_packer_script.json
 

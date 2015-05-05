@@ -2,9 +2,7 @@
     "variables": {
         "commit": "{{env `SNAP_COMMIT_SHORT`}}",
         "pipeline_counter": "{{env `SNAP_PIPELINE_COUNTER`}}",
-        "image_name_prefix": "{{env `APPLICATION_NAME`}}",
-	    "api_key": "{{env `DIGITALOCEAN_API_KEY`}}",
-	    "client_id": "{{env `DIGITALOCEAN_CLIENT_ID`}}"
+        "image_name_prefix": "{{env `APPLICATION_NAME`}}"
     },
     "builders": [{
 	    "api_token": "{{user `api_token`}}",
