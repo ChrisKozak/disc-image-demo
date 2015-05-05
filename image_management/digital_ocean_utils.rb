@@ -34,10 +34,10 @@ class DigitalOceanUtils
   end
 
   def create_new_droplet(name, image_id, ssh_keys=[])
-    london = 7
+    nyc_1 = 1
     smallest_box_512 = 66
 
-    response = @digital_ocean_client.droplets.create({name: name, size_id: smallest_box_512, image_id: image_id, region_id: london, ssh_key_ids: ssh_keys})
+    response = @digital_ocean_client.droplets.create({name: name, size_id: smallest_box_512, image_id: image_id, region_id: nyc_1, ssh_key_ids: ssh_keys})
     response.droplet.id
   end
 
