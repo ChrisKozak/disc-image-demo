@@ -3,9 +3,11 @@
         "commit": "{{env `SNAP_COMMIT_SHORT`}}",
         "pipeline_counter": "{{env `SNAP_PIPELINE_COUNTER`}}",
         "image_name_prefix": "{{env `APPLICATION_NAME`}}"
+
     },
     "builders": [{
-	    "api_token": "{{user `api_token`}}",
+        "api_key": "{{env `DIGITALOCEAN_API_KEY`}}",
+        "client_id": "{{env `DIGITALOCEAN_CLIENT_ID`}}",
         "type": "digitalocean",
         "image": "ubuntu-14-04-x64",
         "snapshot_name": "{{user `image_name_prefix`}}-{{user `pipeline_counter`}}.{{user `commit`}}",
